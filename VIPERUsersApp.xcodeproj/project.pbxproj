@@ -15,6 +15,11 @@
 		38FAAFF826EAFE3600187299 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FAAFF626EAFE3600187299 /* LaunchScreen.storyboard */; };
 		38FAB00326EAFE3600187299 /* VIPERUsersAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAB00226EAFE3600187299 /* VIPERUsersAppTests.swift */; };
 		38FAB00E26EAFE3600187299 /* VIPERUsersAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAB00D26EAFE3600187299 /* VIPERUsersAppUITests.swift */; };
+		38FAB01F26EAFF3100187299 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAB01E26EAFF3100187299 /* Interactor.swift */; };
+		38FAB02126EAFF3B00187299 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAB02026EAFF3B00187299 /* Entity.swift */; };
+		38FAB02326EAFF4800187299 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAB02226EAFF4800187299 /* Presenter.swift */; };
+		38FAB02526EAFF4F00187299 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAB02426EAFF4F00187299 /* Router.swift */; };
+		38FAB02726EAFF8600187299 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAB02626EAFF8600187299 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		38FAB00926EAFE3600187299 /* VIPERUsersAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERUsersAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FAB00D26EAFE3600187299 /* VIPERUsersAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERUsersAppUITests.swift; sourceTree = "<group>"; };
 		38FAB00F26EAFE3600187299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38FAB01E26EAFF3100187299 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		38FAB02026EAFF3B00187299 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		38FAB02226EAFF4800187299 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		38FAB02426EAFF4F00187299 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		38FAB02626EAFF8600187299 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		38FAAFEA26EAFE3300187299 /* VIPERUsersApp */ = {
 			isa = PBXGroup;
 			children = (
+				38FAB01B26EAFEBF00187299 /* Viper */,
 				38FAAFEB26EAFE3300187299 /* AppDelegate.swift */,
 				38FAAFED26EAFE3300187299 /* SceneDelegate.swift */,
 				38FAAFEF26EAFE3300187299 /* ViewController.swift */,
@@ -126,6 +137,18 @@
 				38FAB00F26EAFE3600187299 /* Info.plist */,
 			);
 			path = VIPERUsersAppUITests;
+			sourceTree = "<group>";
+		};
+		38FAB01B26EAFEBF00187299 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				38FAB01E26EAFF3100187299 /* Interactor.swift */,
+				38FAB02026EAFF3B00187299 /* Entity.swift */,
+				38FAB02226EAFF4800187299 /* Presenter.swift */,
+				38FAB02426EAFF4F00187299 /* Router.swift */,
+				38FAB02626EAFF8600187299 /* View.swift */,
+			);
+			path = Viper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38FAB02726EAFF8600187299 /* View.swift in Sources */,
+				38FAB02526EAFF4F00187299 /* Router.swift in Sources */,
+				38FAB02326EAFF4800187299 /* Presenter.swift in Sources */,
 				38FAAFF026EAFE3300187299 /* ViewController.swift in Sources */,
+				38FAB02126EAFF3B00187299 /* Entity.swift in Sources */,
+				38FAB01F26EAFF3100187299 /* Interactor.swift in Sources */,
 				38FAAFEC26EAFE3300187299 /* AppDelegate.swift in Sources */,
 				38FAAFEE26EAFE3300187299 /* SceneDelegate.swift in Sources */,
 			);
